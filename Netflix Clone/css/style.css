@@ -1,0 +1,135 @@
+/* custom variables */
+:root{
+   --primary-color:#e50914;
+}
+
+*{
+   margin: 0;
+   padding:0;
+   box-sizing: border-box;
+}
+
+body{
+   font-family:'Helvetica', 'Arial', sans-serif;
+   --webkit-font-smoothing:antialiased;
+   background:black;
+   color:#999;
+}
+
+ul{
+   list-style: none;
+}
+
+h1, h2, h3, h4{
+   color: white;
+}
+
+a{
+   color: white;
+   text-decoration: none;
+}
+
+p{
+   margin:0.5rem 0;
+}
+
+img{
+   width: 100%;
+}
+
+.showcase{
+   width: 100%;
+   height: 90vh;
+   position: relative;
+   background: url('../images/UG-en-20200302-popsignuptwoweeks-perspective_alpha_website_small.jpg') no-repeat center center/cover;
+}
+
+.showcase-top{
+   position:relative;
+}
+
+.showcase-top img{
+   width: 150px;
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translate(50%, 50%);
+}
+
+.showcase-top a{
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translate(-50%, 100%);
+}
+
+.showcase-content{
+   display: flex;
+   margin: auto;
+   position: relative;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+/* utility classes */
+.btn{
+   display: inline-block;
+   background: var(--primary-color);
+   color:#fff;
+   font-size: 1rem;
+   cursor: pointer;
+   border: none;
+   padding: 0.4rem 1.3rem;
+   margin-right: 0.5rem;
+   outline: none;
+   box-shadow: 0 1px rgba(0,0,0,0.45)
+}
+
+.btn:hover{
+   opacity: 0.8;
+}
+
+.btn-rounded{
+   border-radius: 4px;
+}
+
+.btn-xl{
+   font-size: 2rem;
+   padding: 1.2rem 1.8rem;
+   text-transform: uppercase;
+}
+
+.btn-lg{
+   font-size: 2rem;
+   padding: 0.8rem 1.3rem;
+   text-transform: uppercase;
+}
+
+/* Using an attribute selector to style elements 
+This selector matches and styles elements with a specific
+attribute value. */
+
+input[type="text"] {
+   width: 150px;
+   display: block;
+   margin-bottom: 10px;
+   background-color: yellow;
+}
+
+
+/* CSS animation */
+button:hover {
+   animation-name: background-color; /* animation name */
+   animation-duration: 500ms;        /* animation duration */
+   animation-fill-mode:forwards;     /* animation stays in hover state after the 500ms */
+}
+@keyframes background-color {       /* controls what happens during the animation */
+   0%{                              /* can create transitions from 0% to 100% */
+      background-color:#3561E0;
+   }                                 
+   100%{                             
+   background-color:#4791d0; 
+   }
+}                                   /* end of animation */
