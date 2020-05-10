@@ -27,7 +27,7 @@ body{
 }
 
 .card{
-   width:310px;
+   max-width:310px;
    border-radius:.8em;
    background-color:white;
    margin:1em;
@@ -82,19 +82,37 @@ body{
 
 /* responsive design view */
 /* mobile devices query */
-@media only screen and (min-width: 360px) {
+@media screen and (min-width: 360px) {
    .card_group {
       display: flex;
       flex-wrap:  wrap;
-      align-content: space-around;
+      margin:auto;
+   }
+   .card{
+      flex-grow:1;
+   }
+
+   img {
+      max-width: 100%;
+      height: auto;
    }
 }
 
 
 /* tablet sized devices */
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
    .card_group {
       display: flex;
       flex-wrap: wrap;
+      margin:auto;
+   }
+
+   .card{
+      flex-grow:1;
+   }
+
+   img {
+      max-width: 100%;
+      height: auto;
    }
 }

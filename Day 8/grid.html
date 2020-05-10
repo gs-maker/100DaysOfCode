@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<style>
+   .item1 {
+      background-color: aqua;
+      justify-self:center;
+      padding: 0 20px;
+   }
+
+   .item2 {
+      background-color: aquamarine;
+   }
+
+   .item3 {
+      background-color: orangered;
+   }
+
+   .item4 {
+      background-color: orchid;
+   }
+
+   .item5 {
+      background-color: olivedrab;
+   }
+
+   .grid_container {
+      display: grid;
+      grid-template-columns:200px 200px 200px 200px 200px;
+      grid-template-rows:400px;
+      grid-gap:10px;
+   }
+</style>
+
+<body>
+   <div class="grid_container">
+      <div class="item1">
+         <div class="card_details">
+            <ul class="card_list">
+               <li class="card_item card_active">GarageBand</li>
+               <li class="card_item" >Audition</li>
+               <li class="card_item" >Abberton</li>
+            </ul>
+            <p class="card_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               Dolor iure minima reiciendis quisquam odio quos fuga
+               sint omnis perspiciatis amet!</p>
+         </div>
+         <a class="card_link" href="" >Read More</a>
+      </div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item2">4</div>
+      <div class="item5">5</div>
+   </div>
+</body>
+
+</html>
