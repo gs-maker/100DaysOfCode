@@ -1,0 +1,131 @@
+:root{
+	--background-color:#eee;
+	--form-color:#fff;
+	--button-active: #37af65;
+	--button-hover:#1a971a;
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+html{
+	background-color:var(--background-color);
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 2rem;
+}
+
+.container{
+	max-width:720px;
+	margin:0 auto;
+	padding:25px;
+	background-color:var(--form-color);
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+	margin-right: 5px;
+}
+
+input[type="text number"]{
+	width: 100%;
+	padding: 18px;
+	border-radius:4px;
+	resize: vertical;
+}
+
+input{
+	min-width: 100%;
+	max-width: 100%;
+	padding:10px;
+	margin-bottom:18px;
+	font-size:15px;
+}
+
+.name-group, 
+.input-group{
+	margin-top:20px;
+}
+
+/* inline block alignment */
+#fornavn, 
+#age-select{
+	display:inline-block;
+	margin-right:20px;
+	width:48%;
+} 
+
+#etternavn, 
+#phone {
+	display:inline-block;
+	width:48%;
+} 
+
+select {
+	width: 100%;
+	font-size: 1rem;
+	padding: .8rem;
+	border: none;
+	background-color: #f1f1f1;
+}
+
+/* radio button alignment */
+.group-select label{
+	margin-right: 30px;
+	vertical-align: middle;
+}
+
+/* item select  */
+.item-select label{
+	margin-right: 30px;
+	vertical-align: middle;
+}
+
+ /* button styling */
+.submit-button {
+	width: 100%;
+	padding: 1rem;
+	background: var(--button-active);
+	border-radius: 2px;
+	font-size: 1rem;
+	font-weight:bold;
+	color:white;
+	border:none;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+	input[type="text number"]{
+		width: 100%;
+		padding: 18px;
+		border-radius:4px;
+		resize: vertical;
+	}
+	
+	#fornavn, 
+	#age-select,
+	#etternavn, 
+	#phone{
+	width:100%;
+	} 
+}
+
+@media only screen and (max-width: 540px) {
+	input[type="text number"]{
+		width: 100%;
+		padding: 18px;
+		border-radius:4px;
+		resize: vertical;
+	}
+
+	#fornavn, 
+	#age-select,
+	#etternavn, 
+	#phone{
+	width:100%;
+	} 
+}

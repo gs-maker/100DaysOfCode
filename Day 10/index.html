@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!--  Meta  -->
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Responsive survey form</title>
+
+   <!--  Styles  -->
+   <link rel="stylesheet" href="form.css">
+</head>
+
+<body class="container">
+   <h1 id="title">Student satisfaction survey</h1>
+   <p id="description">Fill in the form to share feedback on your learning</p>
+   <hr>
+
+   <form id="surveryForm" class="form-control">
+      <div class="name-group">
+         <div id="fornavn">
+            <label for="name">First Name</label>
+            <input type="text" id="firstname" placeholder="Enter your name" required>
+         </div>
+         <div id="etternavn">
+            <label for="name"> Last Name</label>
+            <input type="text" id="lastname" placeholder="Enter your name" required>
+         </div>
+      </div>
+
+      <!-- age and phone-number -->
+      <div class="age-group">
+         <div id="age-select">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="18" max="100" required>
+         </div>
+
+         <div id="phone">
+            <label for="age">Phone Number</label>
+            <input type="text" id="phone" name="phone" required>
+         </div>
+      </div>
+
+      <!-- ID Number & Email -->
+      <div>
+         <label for="number">ID number</label>
+         <input type="text" id="number" placeholder="Enter your ID number" required>
+      </div>
+
+      <div>
+         <label for="email">Email</label>
+         <input type="email" id="email" placeholder="Enter your email address" required>
+      </div>
+
+      <div>
+         <label for="role">How would you describe your role?</label>
+         <select id="role">
+            <option value="Student">Student</option>
+            <option value="Junior Developer">Junior Developer</option>
+            <option selected value="Mid-level Developer">Mid-level Developer</option>
+            <option value="Full-stack Developer">Full-stack Developer</option>
+            <option value="Senior Developer">Senior Developer</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+         </select>
+      </div>
+
+      <div class="input-group">
+         <label for="recommend"> Would you recommend this to a friend?</label>
+         <div class="group-select">
+            <input type="radio" id="definitely" name="recommend" value="definitely" selected>
+            <label for="definitely">Definitely</label>
+            <input type="radio" id="maybe" name="recommend" value="maybe">
+            <label for="maybe">Maybe</label>
+            <input type="radio" id="no sure" name="recommend" value="not sure">
+            <label for="not sure">Not sure</label>
+         </div>
+      </div>
+
+      <hr>
+      <div class="form-group">
+         <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+         </p>
+         <div class="item-select">
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />
+            <label for="front-end">Front-end</label>
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />
+            <label for="front-end">Projects</label>
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />
+            <label for="front-end">Videos</label>
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />
+            <label for="front-end">Open-source Community</label><br>
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />
+            <label for="front-end">Challenges</label>
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />
+            <label for="front-end">Data Visualisation</label>
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />
+            <label for="front-end">City Meetups</label>
+         </div>
+      </div>
+      <hr>
+
+      <div class="input-group">
+         <label for="textarea"> Any additional comments or message?</label>
+         <input type="textarea" id="text-area" rows="5" cols="100">
+      </div>
+
+      <div class="form-group">
+         <button type="submit" id="submit" class="submit-button">SUBMIT</button>
+      </div>
+
+   </form>
+
+   <!-- Scripts -->
+   <script src="scripts/index.js"></script>
+</body>
+
+</html>
