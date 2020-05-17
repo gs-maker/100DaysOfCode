@@ -1,0 +1,398 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+
+:root{
+   --text:#333;
+   --btn-color:#f7f7f6;
+   --btn-dark:#a4a4a4;
+}
+
+hr {
+   height: 1px;
+   color: #123455;
+   background-color: grey;
+   border: none;
+   margin: 10px 0;
+}
+
+
+html{
+   font-family: 'Lato', sans-serif;
+   font-size:16px;
+   color:var(--text);
+}
+
+header{
+   width:100%;
+   height:100vh;
+   position:relative;
+}
+
+a{
+   text-decoration:none;
+   color: var(--text);
+}
+
+.menu-toggle{
+   width:5rem;
+   height:5rem;
+   top:1rem;
+   left:1rem;
+   position: absolute;
+   align-items:center;
+   justify-content: center;
+   cursor: pointer;
+   display: none;
+   z-index:999;
+}
+
+.menu-toggle i,
+.fa-times{
+   font-size:3.5rem;
+}
+
+.fa-times{
+   display:none;
+   cursor:pointer;
+}
+
+nav{
+   position:relative;
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index:1000;
+   border-bottom: 1px solid rgba(0,0,0, .075);
+}
+
+.logo{
+   width: 5rem;
+   box-sizing: content-box;
+   padding-left:3rem;
+}
+
+.logo img{
+   display: block;
+   width: 100%;
+}
+
+nav ul{
+   height: 5rem;
+   list-style: none;
+   display:flex;
+}
+
+nav ul li{
+   padding: 0 2rem;
+   line-height: 5rem;
+   transition: background-color, 0.5s;
+}
+
+nav ul li:hover{
+   background-color: rgba(0,0,0,.075)
+}
+
+.nav-right ul li{
+   border-right: 1px solid rgba(0,0,0, .075);
+}
+
+.nav-right ul li:nth-child(1){
+   border-left: 1px solid rgba(0,0,0, .075);
+}
+
+.nav-right i{
+   margin-right:.5rem;
+}
+
+.main{
+   position:absolute;
+   display: flex;
+   top: 0;
+   left: 0;
+   bottom:0;
+   right:0;
+}
+
+.tone1{
+   background-color:#eee;
+   height:100vh;
+   flex:1;
+}
+
+.tone2{
+   background-color:rgb(255, 85, 85);
+   height:100vh;
+   flex:1;
+   position:relative;
+}
+
+.tone2 img{
+   width:100%;
+   position: absolute;
+   top:50%;
+   left:-8rem;
+   transform:translateY(-50%);
+   transform:scale(1.25, 1.25);
+   top:200px;
+}
+
+.product-info{
+   display:flex;
+   flex-direction:column;
+   align-items:left;
+   justify-content:center;
+   margin: 0 3.5rem;
+   max-width:575px;
+   width:90%;
+   height:100%;
+}
+
+.product-info h1{
+   font-size:3.5rem;
+}
+
+.product-info h5{
+   font-size:1.3rem;
+   font-style: italic;
+   margin-bottom: 1rem;
+}
+
+.product-info p{
+   font-size:.95rem;
+   line-height:1.4rem;
+   margin-bottom:1rem;
+}
+
+.product-info h3{
+   font-size:2rem;
+   line-height: 3.5rem;
+}
+
+.btn{
+   display:flex;
+   padding:.8rem;
+   color:var(--text);
+   font-size: 1rem;
+   font-weight: 500;
+   transition: all .3s;
+}
+
+.info-btns{
+   display:flex;
+}
+.btn-discover{
+   background-color:var(--btn-dark);
+}
+.btn-cart{
+   background-color: #141110;
+   color:white;
+}
+
+.btn-cart:hover,
+.btn-discover:hover{
+   box-shadow:3px .75rem 1.5rem rgba(0,0,0, .3);
+   transform:translateY(-.75rem);
+}
+
+/* responsive styles start here */
+@media screen and (max-width:1200px){
+   .tone2 img{
+      left:-4rem;
+      transform: scale(1.15, 1.15);
+      top:250px;
+   }
+
+   .product-info{
+      max-width:450px;
+   }
+   .product-info h1{
+      font-size: 3rem;
+   }
+   
+   .product-info h5{
+      font-size:1.2rem;
+   }
+   
+   .product-info p{
+      font-size:.85rem;
+      line-height:1.4rem;
+      margin-bottom:.85rem;
+   }
+   
+   .product-info h3{
+      font-size:1.5rem;
+      line-height: 3rem;
+   }
+   
+   .btn{
+      display:flex;
+      padding:.7rem;
+      font-size: .85rem;
+   }
+}
+
+@media screen and (max-width:900px){
+   .logo{
+      padding-left:2rem;
+   }
+   nav ul {
+      height:2.5rem;
+      font-size:.85rem;
+      line-height: .5rem;
+   }
+
+   nav ul li{
+      padding: 0 1rem;
+      line-height: 2.5rem;
+   }
+
+   .tone2 img{
+      left:-1.5rem;
+      transform: scale(1.1, 1.1);
+      top:300px;
+   }
+
+   .product-info{
+      max-width:350px;
+   }
+   .product-info h1{
+      font-size: 2rem;
+   }
+   
+   .product-info h5{
+      font-size:1.2rem;
+   }
+   
+   .product-info p{
+      font-size:.75rem;
+      line-height:1.2rem;
+      margin-bottom:.8rem;
+   }
+   
+   .product-info h3{
+      font-size:1.5rem;
+      line-height: 3rem;
+   }
+   
+   .btn{
+      display:flex;
+      padding:.6rem;
+      font-size: .75rem;
+   }
+}
+
+@media screen and (max-width:600px){
+   .main{
+      flex-direction: column-reverse;
+   }
+
+   .tone2 img{
+      left:0;
+      top:120px;
+      transform:scale(1,1);
+   }
+
+   .product-info{
+      max-width:560px;
+      margin: 0 2.5rem;
+      padding-right:2rem;
+   }
+
+   .product-info h5{
+      font-size:1.35rem;
+   }
+   
+   .product-info p{
+      font-size:.85rem;
+      line-height:1.35rem;
+   }
+
+   nav{
+      display:flex;
+      border-bottom:none;
+      flex-direction:column;
+      justify-content:space-evenly;
+      width:20rem;
+      height:100vh;
+      background-color: rgb(202, 202, 202);
+      transform:translateX(-20rem);
+      transition: transform 0.3s;
+   }
+
+   nav ul{
+      height:initial;
+      display:block;
+      font-size:1rem;
+      text-align: center;
+   }
+
+   nav ul li{
+      padding:0;
+      line-height:initial;
+      margin-bottom:1.5rem;
+   }
+
+   .logo{
+      padding:0;
+   }
+
+   .nav-right ul li,
+   .nav-right ul li:nth-child(1){
+      border:none;
+   }
+
+   .menu-toggle{
+      display:flex;
+      position:absolute;
+      top:1rem;
+      right:1rem;
+   }
+
+   .fa-times{
+      display:block;
+      position:absolute;
+      top:1rem;
+      left:1rem;
+   }
+
+   .active{
+      transform:translateX(0);
+   }
+
+   .overlay{
+      position:absolute;
+      width:0;
+      height:100vh;
+      background-color: rgba(0,0,0,0.8);
+      z-index:998;
+      opacity:0;
+      transition:opacity .3s;
+   }
+
+   .overlay .menu-open{
+      width:100%;
+      opacity:1;
+   }
+}
+
+@media screen and (max-width:400px){
+   .product-info{
+      padding-right:2.5rem;
+      margin: 0 2rem;
+   }
+
+   .product-info h1{
+      font-size:2rem;
+   }
+   .product-info h5{
+      font-size:1rem;
+   }
+   
+   .product-info p{
+      font-size:.85rem;
+      line-height:1.2rem;
+   }
+}

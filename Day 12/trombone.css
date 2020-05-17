@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+
+:root{
+   --showcase:rgba(0,0,0,.5);
+   --background-color:#eee;
+   --button-select:orange;
+   --cards-color:#fff;
+}
+
+html{
+   font-family: 'Lato', sans-serif;
+   font-size:16px;
+   background-color:var(--background-color)
+}
+
+h1{
+   font-family: 'Merriweather', serif;
+   text-transform: uppercase;
+   color:grey;
+   text-align: center;
+}
+
+hr {
+   height: 1px;
+   color: #123455;
+   background-color: grey;
+   border: none;
+   margin: 10px 0;
+}
+
+.header{
+   text-align:center;
+}
+
+.header p{
+   font-size: 1.5rem;
+   font-weight: 200;
+   padding-bottom: 10px;
+}
+
+.header h1{
+   font-size: 1.5rem;
+   color: rgb(255, 136, 0);
+}
+
+p{
+   line-height: 1.5rem;
+}
+
+li, a, button{
+   text-decoration: none;
+   font-family:'Lato' sans-serif;
+}
+
+.wrapper{
+   margin:auto;
+   width:1180px;
+   overflow:hidden;
+}
+
+#navbar{
+   padding-top:10px;
+   display:flex;
+   align-items:center;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+#navbar img{
+   width:250px;
+   height:auto;
+}
+
+#navbar a, li{
+   display:inline-block;
+   margin-left:20px;
+   color:var(--cards-color);  
+}
+
+/* showcase area styling */
+.show_items{
+   background-image:url('./img/chris-bair-A10y2Eq7OHY-unsplash.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   height:70vh;
+   width:100%;
+}
+
+.showcase_button, 
+.showcase_input{
+   display: inline-block;
+}
+
+.showcase input{
+   padding:15px 70px;
+   font-size:1rem;
+   border:none;
+}
+
+.showcase button{
+   font-size:1rem;
+   background-color:var(--button-select);
+   padding: 15px 20px;
+   text-transform: uppercase;
+   border:none;
+}
+
+.showcase{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   align-content: center;
+   padding:180px 100px;
+}
+
+.showcase h1{
+   text-transform: none;
+   color: var(--cards-color);
+}
+
+.showcase p{
+   text-align:center;
+   color: var(--cards-color);
+   font-size:1.5rem;
+   padding-top:5px;
+   margin-bottom:40px;
+}
+
+#features,
+#howItWorks{
+   margin-top:80px;
+}
+
+.features_list {
+   margin-top:40px;
+   display:grid;
+   grid-template-columns: 340px 340px 340px;
+   column-gap: 45px;
+}
+
+
+/* video styling */
+.responsive-video{
+   width:100%;
+   height:0;
+   padding-bottom:56.25%;
+   position: relative;
+   margin: 40px 0;
+}
+
+.responsive-video iframe{
+   position:absolute;
+   width:100%;
+   height:100%;
+}
+
+
+/* product cards styling */
+.product_cols{
+   display:flex;
+   padding: 30px 0;
+}
+
+.product_cols .product_col1,
+.product_cols .product_col2,
+.product_cols .product_col3,
+.product_cols .product_col4{
+flex:1;
+width: 25%;
+max-width: 300px;
+height: 360px;
+background:var(--cards-color);
+border-radius:5px;
+margin-right: 20px;
+text-align:center;
+padding-top:20px;
+}
+
+.product_cols .product_col4{
+   margin-right: 0;
+}
+
+.product_cols h3{
+   font-weight: 400;
+   color:grey;
+}
+
+.product_cols ul{
+   margin:20px 0;
+}
+.product_cols li{
+   text-decoration: none;
+   color:black;
+   line-height:2rem;
+   padding: 0 20px;
+   
+}
+
+.product_cols p{
+   font-size:2.5rem;
+   padding-top:30px;
+   font-family:'Merriweather', serif;
+   font-weight: bold;
+}
+
+.product_cols button{
+   background:var(--button-select);
+   padding:10px 35px;
+   border:none;
+   font-size:.85rem;
+   text-transform: uppercase;
+   border-radius:20px;
+}
+
+/* phone */
+@media(max-width:540px){
+   .showcase{
+      max-width: 540px;
+      padding: 0 30px;
+      margin-top:200px;
+   }
+
+   .product_cols .product_col1,
+   .product_cols .product_col2,
+   .product_cols .product_col3,
+   .product_cols .product_col4{
+      width: 80%;
+      height: 360px;
+      background:var(--cards-color);
+      margin-bottom: 16px;
+   }
+
+
+}
+
+/* tablet */
+@media(max-width:768px){
+
+   .showcase{
+      max-width: 800px;
+      padding: 0 30px;
+      margin-top:200px;
+   }
+
+   .product_cols{
+      display:block;
+   }
+
+   .product_cols .product_col1,
+   .product_cols .product_col2,
+   .product_cols .product_col3,
+   .product_cols .product_col4{
+      display:inline-block;
+      width:45%;
+   }
+
+   .product_cols .product_col1,
+   .product_cols .product_col2 {
+      margin-bottom:16px;
+   }
+}
+
+/* Mobile portait (320px to 414px) — For devices with 4" to 6.9" screens.
+Mobile landscape (568px to 812px) — Same, but landscape.
+Tablet portait (768px to 834px) — For devices 7" to 10"
+Tablet landscape (1024px to 1112px) — Ditto, but also 12" tablets on portrait. */
