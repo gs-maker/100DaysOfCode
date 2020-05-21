@@ -339,6 +339,11 @@ li {
     font-size:1rem;
   }
 
+  #navbar a,
+  li {
+     margin-left: 12px;
+    }
+
   .showcase{
     padding:0 16px;
   }
@@ -374,6 +379,16 @@ li {
   .product_card {
     width: 100%;
     padding:30px;
+  }
+}
+
+@media screen and (max-width:340px){
+  .showcase input {
+    padding: 12px 10px;
+  }
+  
+  .showcase button {
+    padding: 12px 8px;
   }
 }
 
