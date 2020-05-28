@@ -89,8 +89,7 @@ li {
 /* showcase area styling */
 .show_items {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
-    url("./img/chris-bair-A10y2Eq7OHY-unsplash.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("./img/chris-bair-A10y2Eq7OHY-unsplash.jpg");
   overflow: hidden;
   background-size: cover;
   height: 80vh;
@@ -200,8 +199,8 @@ li {
 
 #pricing .header {
   width: 100%;
-  text-align:center;
-  margin-top:48px;
+  text-align: center;
+  margin-top: 48px;
 }
 
 .product_cols {
@@ -209,7 +208,7 @@ li {
   flex-direction: row;
   justify-content: space-between;
   flex-flow: wrap;
-  margin-top:24px;
+  margin-top: 24px;
 }
 
 .product_card {
@@ -232,7 +231,7 @@ li {
   color: white;
 }
 
-.product_cols #bass li{
+.product_cols #bass li {
   color: white;
 }
 
@@ -240,7 +239,7 @@ li {
   margin-right: 0;
 }
 
-.product_cols #bass  h3{
+.product_cols #bass h3 {
   color: white;
 }
 
@@ -294,7 +293,7 @@ li {
   }
 
   .product_cols {
-    width:100%
+    width: 100%;
   }
 
   .product_cols li {
@@ -311,89 +310,86 @@ li {
 
 /* media screen at 600px */
 @media screen and (max-width: 620px) {
-  #navbar{
-    justify-content:center;
+  #navbar {
+    justify-content: center;
   }
-  
-  .logo img{
+
+  .logo img {
     width: 400px;
     height: auto;
   }
 
-  .menu-items{
-    margin-top:24px;
-    font-size:1.2rem;
+  .menu-items {
+    margin-top: 24px;
+    font-size: 1.2rem;
   }
 
-  #pricing .header{ 
-    width:100%;
+  #pricing .header {
+    width: 100%;
   }
   .product_card {
     width: 48%;
   }
 }
 
-@media screen and (max-width:400px){
-  .menu-items{
-    margin-top:24px;
-    font-size:1rem;
+@media screen and (max-width: 400px) {
+  .menu-items {
+    margin-top: 24px;
+    font-size: 1rem;
   }
 
   #navbar a,
   li {
-     margin-left: 12px;
-    }
-
-  .showcase{
-    padding:0 16px;
-  }
-  .showcase h1{
-    font-size:1.8rem;
+    margin-left: 12px;
   }
 
-  .showcase p{
-    font-size:1.5rem;
+  .showcase {
+    padding: 0 16px;
+  }
+  .showcase h1 {
+    font-size: 1.8rem;
+  }
+
+  .showcase p {
+    font-size: 1.5rem;
   }
   .showcase input {
     padding: 12px 28px;
   }
-  
+
   .showcase button {
     padding: 12px 16px;
   }
-  .features_list{
+  .features_list {
     flex-direction: column;
   }
-  
+
   .features_1,
   .features_2,
   .features_3 {
-  border-left: none;
-  padding:32px;
-  border-bottom: 1px solid grey;
+    border-left: none;
+    padding: 32px;
+    border-bottom: 1px solid grey;
   }
 
-  .features_1{
+  .features_1 {
     border-top: 1px solid grey;
   }
   .product_card {
     width: 100%;
-    padding:30px;
+    padding: 30px;
   }
 }
 
-@media screen and (max-width:340px){
+@media screen and (max-width: 340px) {
   .showcase input {
     padding: 12px 10px;
   }
-  
+
   .showcase button {
     padding: 12px 8px;
   }
 }
-
-
-  
 
 /* Mobile portait (320px to 414px) — For devices with 4" to 6.9" screens.
 Mobile landscape (568px to 812px) — Same, but landscape.

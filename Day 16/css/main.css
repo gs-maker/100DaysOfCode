@@ -1,0 +1,179 @@
+:root {
+   --primary-color: #ffcc00;
+   --submit-btn-bg-color: black;
+   --submit-btn-color: white;
+}
+
+body,
+html {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   height: 100%;
+   font-family: "Montserrat";
+   /* display: none; */
+}
+
+header {
+   position: absolute;
+   padding: 1em;
+   z-index: 20;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: calc(100% - 2em);
+   background: white;
+}
+
+header a {
+   text-decoration: none;
+   color: black;
+}
+
+header .logo {
+   font-size: 2rem;
+   font-weight: bold;
+}
+
+header nav ul {
+   list-style-type: none;
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+header nav li a {
+   padding: 1rem;
+}
+
+.wrapper {
+   display: grid;
+   grid-template-columns: 70% auto;
+   grid-template-rows: 60% auto;
+   grid-template-areas:
+      "hero featured"
+      "hero subscribe";
+   height: 100vh;
+}
+
+section.hero {
+   grid-area: hero;
+}
+
+section {
+   display: grid;
+   grid-template-rows: auto;
+   align-items: center;
+}
+
+.wrapper section {
+   padding: 3rem;
+}
+
+section h1,
+h2,
+.read-btn {
+   text-transform: uppercase;
+   margin: 0;
+}
+
+h2 {
+   font-size: 1.2rem;
+}
+
+.read-btn {
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   background: url("../img/next.svg") no-repeat;
+   background-size: 16px;
+   background-position: 0 1px;
+   padding-left: 1.5rem;
+   color: black;
+}
+
+.primary {
+   padding: 1.5rem 1.5rem 1.5rem calc(3rem + 2rem);
+   background-position: 3rem;
+   border: 1px solid grey;
+   margin-top: 3rem;
+   /* margin-left: -3rem; */
+   display: inline-block;
+}
+
+.clipper {
+   overflow: hidden;
+}
+
+section.hero {
+   padding: 5rem;
+   background: url("../img/PIXNIO-1732849-5820x3880.jpg");
+   background-position: center;
+   background-size: cover;
+}
+
+.hero p {
+   width: 70%;
+   font-size: 1.2rem;
+   line-height: 2rem;
+   margin-bottom: 0;
+}
+
+.hero h1 {
+   font-size: 2.4rem;
+}
+
+section.sidebar,
+section.sunscribe {
+   font-size: 1rem;
+   line-height: 1.6rem;
+}
+
+section.sidebar {
+   background-color: var(--primary-color);
+}
+
+.sidebar .read-btn {
+   margin-top: 2rem;
+   display: block;
+   background-position: 0 0.3rem;
+}
+
+section.subscribe input {
+   width: calc(100% - 2rem);
+   font-size: 0.8rem;
+   padding: 1rem;
+   font-family: "Montserrat";
+   margin-bottom: 1rem;
+}
+
+button {
+   width: 100%;
+   font-size: 1rem;
+   background: var(--submit-btn-bg-color);
+   color: var(--submit-btn-color);
+   padding: 1rem;
+   border: none;
+   font-family: "Montserrat";
+}
+
+@media screen and (max-width: 1020px) {
+   header {
+      background: none;
+   }
+
+   h1 {
+      margin-top: 20vh;
+   }
+}
+
+@media only screen and (min-width: 1800px) {
+   html {
+      font-size: 21px;
+   }
+}
