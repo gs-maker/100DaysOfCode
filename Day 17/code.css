@@ -66,7 +66,6 @@ code {
    display: block;
    word-break: normal;
    word-wrap: normal;
-   /* white-space: pre-wrap; */
    position: relative;
    background-color: #f7f7f7;
    padding: 16px;
@@ -95,23 +94,30 @@ code {
    }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 375px) {
    .wrapper {
       width: 100%;
+      font-size: 0.85rem;
+      min-width: 360px;
    }
-   .sidebar {
-      margin: 0 16px;
+
+   .main-section {
+      padding: 0 24px;
+      margin-bottom: 52px;
       width: 100%;
+   }
+
+   .sidebar {
+      width: 100%;
+   }
+
+   .main-section header {
+      line-height: 1.5rem;
+      font-size: 1.5rem;
    }
 
    code {
-      width: 100%;
-      min-width: 240px;
-   }
-
-   #main-doc {
-      position: relative;
-      margin-left: 0px;
-      margin-top: 270px;
+      font-size: 0.75rem;
+      margin: 8px 0;
    }
 }
