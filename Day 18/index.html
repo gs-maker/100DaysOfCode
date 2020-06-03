@@ -1,86 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Gerald Portfolio</title>
-      <script src="https://kit.fontawesome.com/d091d0e08c.js" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="portfolio.css" />
-   </head>
 
-   <body>
-      <nav class="navbar">
-         <div class="logo">
-            <img src="/Day 18/img/logo-01.svg" alt="gerald logo" />
-         </div>
-         <div class="socials">
-            <ul>
-               <li>
-                  <i class="fab fa-twitter"><a href="https://twitter.com/gs_maker" target="_blank">twitter</a></i>
-               </li>
-               <li>
-                  <i class="fab fa-github"><a href="https://github.com/gs-maker" taget="_blank">github</a></i>
-               </li>
-               <li>
-                  <i class="fab fa-linkedin-in"
-                     ><a href="https://www.linkedin.com/in/gerald-ssali-06497220/" target="_blank">linkedin</a></i
-                  >
-               </li>
-            </ul>
-         </div>
-      </nav>
-      <section class="wrapper">
-         <div class="intro">
-            <h1>I create experiences that make people's lives easier</h1>
-            <div class="line"></div>
-            <h3>My name is Gerald Ssali</h3>
-            <p class="intro-descr">
-               In my previous life, I crafted communication for brands as an Art Director,
-               <a href="">graphics design </a>work, UI/UX design, wrote a few radio and tv scripts. Now, I am
-               <a href="">learning how to write code</a> so as to create memorable digital user experiences.
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Gerald Portfolio</title>
+   <script src="https://kit.fontawesome.com/d091d0e08c.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body>
+   <nav class="navbar">
+      <div class="logo">
+         <img src="./img/logo-01.svg" alt="gerald logo" />
+      </div>
+      <div class="socials">
+         <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#work">PORTFOLIO</a></li>
+            <li><a href="#contact">SAY HELLO</a></li>
+            <li>
+               <a href="https://twitter.com/gs_maker" target="_blank"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+               <a href="https://github.com/gs-maker" target="_blank"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+               <a href="https://www.linkedin.com/in/gerald-ssali-06497220/" target="_blank"><i
+                     class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li><i class="fas fa-bars"></i></li>
+         </ul>
+      </div>
+   </nav>
+   <section class="wrapper" id="about">
+      <div class="intro">
+         <h1>I create digital products, services and experiences that help business grow</h1>
+         <div class="line"></div>
+         <h3>My name is Gerald Ssali</h3>
+         <p class="intro-descr">
+            In my previous life, I crafted communication for brands as an Art Director,
+            <a href="https://www.linkedin.com/in/gerald-ssali-06497220/" target="_blank">worked as a graphics and UI/UX
+               designer </a> and aslo wrote a few scripts for radio and tv. Now, I am
+            <a href="https://github.com/gs-maker">learning how to write code</a> so as to create innovative and
+            memorable digital user experiences.
+         </p>
+         <!-- <button>Download Resume</button> -->
+      </div>
+   </section>
+
+   <section id="work">
+      <div class="works">
+         <div class="workSelect" id="bodaAsset">
+            <h3>Boda Banja</h3>
+            <p>
+               A web app to register, recieve and schedule payments for an asset financing startup
             </p>
-            <!-- <button>Download Resume</button> -->
+            <button class="btn-select"><a href="bodaBanja.html" target="_self">View Case</a></button>
          </div>
-         <div class="works">
-            <div class="workSelect" id="bodaAsset">
-               <h3>BodaBanja</h3>
-               <p>
-                  An asset financing web app to register customers, recieve and schedule payments
-               </p>
-               <button>View Case</button>
-            </div>
-            <div class="workSelect" id="brovad">
-               <h3>Hotel Brovad Rebranding</h3>
-               <p>
-                  An evolution of a 25year old instituition's image
-               </p>
-               <button>View Case</button>
-            </div>
 
-            <div class="workSelect" id="goApp">
-               <h3>GO App Design</h3>
-               <p>
-                  A new super app with various micro services in one place was launcing on the market and needed the
-                  right look
-               </p>
-               <button>View Case</button>
-            </div>
-
-            <div class="workSelect" id="tempride">
-               <h3>Tempride</h3>
-               <p>
-                  Earn extra cash from your car while you finish your 9-5.
-               </p>
-               <button>View Case</button>
-            </div>
+         <div class="workSelect" id="brovad">
+            <h3>Hotel Brovad</h3>
+            <p>
+               An evolution of a 25year old institution's image to suit their dynamic clientele
+            </p>
+            <button class="btn-select"><a href="#" target="_blank">View Case</a></button>
          </div>
-      </section>
 
-      <section class="contact">
-         <label for="email">
-            <input type="text" name="email" id="email" placeholder="email address" />
-         </label>
-         button
-      </section>
-   </body>
+         <div class="workSelect" id="goApp">
+            <h3>GO App</h3>
+            <p>
+               Through this platform, users have access to their most in-demand services in one place
+            </p>
+            <button class="btn-select"><a href="#" target="_blank">View Case</a></button>
+         </div>
+
+         <div class="workSelect" id="tempride">
+            <h3>Nomrek</h3>
+            <p>
+               A law firm with various fields of practice sought to have an impact in the digital age
+            </p>
+            <button class="btn-select"><a href="#" target="_blank">View Case</a></button>
+         </div>
+
+         <!-- <div class="workSelect" id="tempride">
+            <h3>Tempride</h3>
+            <p>
+               With tempride, rent out your car and earn extra cash whenever you aren't using it
+            </p>
+            <button class="btn-select"><a href="#" target="_blank">View Case</a></button>
+         </div> -->
+      </div>
+   </section>
+
+
+   <section class="contact" id="contact">
+      <h3>That's it for now! Now it's your turn to say hi</h3>
+      <p></p>
+      <label for="email">
+         <input type="text" name="email" id="email" placeholder="email address" />
+      </label>
+      button
+   </section>
+</body>
+
 </html>
