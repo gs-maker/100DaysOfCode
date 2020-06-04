@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@400;700;900&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--red: rgb(255, 0, 0);
+	--black: rgb(53, 53, 53);
+}
+
+body {
+	background-color: #eee;
+}
+
+html {
+	font-size: 16px;
+	line-height: 1.5rem;
+	font-family: "Lato", sans-serif;
+	color: var(--black);
+}
+
+a {
+	text-decoration: none;
+	color: var(--black);
+	background-color: transparent;
+	display: inline-block;
+	position: relative;
+}
+
+a:hover {
+	cursor: pointer;
+	color: var(--red);
+}
+
+h1 {
+	font-family: "Merriweather", serif;
+}
+
+/* horizontal line styling */
+hr {
+	border: 1px;
+	height: 1px;
+	background-color: var(--black);
+}
+
+/* navbar styles */
+.navbar {
+	display: flex;
+	flex-direction: row;
+	padding: 4px 16px;
+	width: 100%;
+	position: fixed;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid grey;
+	background-color: white;
+	z-index: 20;
+}
+
+.navbar li {
+	list-style-type: none;
+	color: var(--black);
+	font-size: 14px;
+	display: inline-block;
+	padding: 0 16px;
+}
+
+.navbar i {
+	font-size: 1.2rem;
+	margin-right: 4px;
+}
+
+.navbar img {
+	width: 120px;
+	height: auto;
+}
+
+.socials {
+	/* width: 600px; */
+	display: flex;
+	justify-content: center;
+	align-content: space-around;
+}
+
+/* contact information styles */
+.contact {
+	margin: 120px 0;
+	text-align: center;
+}
+
+.contact h3 {
+	margin: auto;
+	margin-bottom: 2rem;
+	font-family: "Merriweather", sans-serif;
+	font-size: 3rem;
+	line-height: 3.5rem;
+	width: 100%;
+	max-width: 800px;
+	padding: 0 16px;
+}
+
+.contact p {
+	padding: 0 16px;
+	font-size: 1.5rem;
+	width: 100%;
+}
+
+.contact a {
+	color: grey;
+	font-size: 1.5rem;
+	text-decoration: underline;
+	margin-top: 0.5rem;
+}
+
+.contact a:hover {
+	color: var(--red);
+}
+
+/* footer styling */
+footer {
+	text-align: center;
+	margin: 0.5rem;
+	width: 100%;
+	padding: 0 1rem;
+}
+
+footer a {
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 480px) {
+	/* contact information styles */
+	.contact h3 {
+		font-size: 2rem;
+		line-height: 2.5rem;
+	}
+
+	.contact p {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	footer {
+		font-size: 1rem;
+	}
+}

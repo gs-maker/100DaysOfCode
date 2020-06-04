@@ -1,67 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@400;700;900&display=swap");
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-html {
-	font-family: "Lato", sans-serif;
-	font-size: 16px;
-	line-height: 1.75rem;
-	background-color: #eee;
-}
-
-hr {
-	border: 1px;
-	height: 1px;
-	background-color: lightgray;
-}
-
-a {
-	text-decoration: none;
-	color: var(--black);
-	background-color: transparent;
-	display: inline-block;
-	position: relative;
-}
-
-a:hover {
-	cursor: pointer;
-	color: var(--red);
-}
-
-/* navbar styles */
-.navbar {
-	display: flex;
-	flex-direction: row;
-	padding: 4px 16px;
-	width: 100%;
-	background-color: white;
-	position: fixed;
-	align-items: center;
-	justify-content: space-between;
-	z-index: 20;
-}
-
-.navbar .socials li {
-	list-style-type: none;
-	color: black;
-	font-size: 14px;
-	display: inline-block;
-	padding: 0 16px;
-}
-
-.navbar i {
-	font-size: 1rem;
-	margin-right: 4px;
-}
-
-.navbar img {
-	width: 120px;
-	height: auto;
-}
-
 /* images styling */
 .wrapper {
 	display: grid;
@@ -81,6 +17,11 @@ a:hover {
 	object-fit: cover;
 	position: relative;
 	top: 32px;
+}
+
+.header-image a {
+	color: white;
+	grid-column: 2/3;
 }
 
 /* preamble styles */
@@ -120,6 +61,18 @@ a:hover {
 	margin-bottom: 1.5rem;
 }
 
+.options a {
+	text-decoration: underline;
+}
+
+.options a:last-child {
+	margin-left: 32px;
+}
+
+.options i {
+	margin-right: 4px;
+}
+
 .wrapper .image-gallery {
 	grid-column: 2/9;
 }
@@ -127,16 +80,17 @@ a:hover {
 .image-gallery .slide_one img {
 	width: 100%;
 	height: 100%;
-	max-height: 520px;
+	max-height: 480px;
 	object-fit: cover;
 }
 
 .wrapper .brief {
 	grid-column: 3/8;
+	margin: 3rem 0;
 }
 
-.brief {
-	margin: 3rem 0;
+.brief p {
+	margin-bottom: 1rem;
 }
 
 /* large image */

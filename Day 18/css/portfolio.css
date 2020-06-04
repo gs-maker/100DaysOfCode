@@ -1,100 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@400;700;900&display=swap");
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	background-color: #eee;
-}
-
-:root {
-	--red: rgb(255, 0, 0);
-	--black: rgb(17, 17, 17);
-}
-
-html,
-a,
-li {
-	font-size: 16px;
-	line-height: 1.5rem;
-	font-family: "Lato", sans-serif;
-}
-
-a {
-	text-decoration: none;
-	color: var(--black);
-	background-color: transparent;
-	display: inline-block;
-	position: relative;
-}
-
-a:hover {
-	cursor: pointer;
-	color: var(--red);
-}
-
-h1 {
-	font-family: "Merriweather", serif;
-}
-
-.intro a:after {
-	background: none repeat scroll 0 0 transparent;
-	bottom: 0;
-	content: "";
-	display: block;
-	height: 2px;
-	left: 50%;
-	position: absolute;
-	background: var(--red);
-	transition: width 0.3s ease 0s, left 0.3s ease 0s;
-	width: 0;
-}
-
-.intro a:hover:after {
-	width: 100%;
-	left: 0;
-}
-
-/* navbar styles */
-.navbar {
-	display: flex;
-	flex-direction: row;
-	padding: 4px 16px;
-	width: 100%;
-	position: fixed;
-	align-items: center;
-	justify-content: space-between;
-	border-bottom: 1px solid grey;
-	z-index: 20;
-}
-
-.navbar .socials li {
-	list-style-type: none;
-	color: black;
-	font-size: 14px;
-	display: inline-block;
-	padding: 0 16px;
-}
-
-.navbar i {
-	font-size: 1.2rem;
-	margin-right: 4px;
-}
-
-.navbar img {
-	width: 120px;
-	height: auto;
-}
-
+/* intro section styles */
 .wrapper {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 }
 
-/* intro section styles */
 .intro {
 	grid-column: 1/2;
-	margin-left: 36px;
-	margin-top: 120px;
+	margin-left: 32px;
+	margin-top: 160px;
 	justify-content: center;
 	align-content: center;
 	grid-column: 2/5;
@@ -112,7 +25,9 @@ h1 {
 
 .intro p {
 	line-height: 1.65rem;
-	max-width: 720px;
+	font-size: 1.1rem;
+	max-width: 800px;
+	margin-bottom: 2rem;
 }
 
 .intro h3 {
@@ -133,11 +48,11 @@ button {
 	text-transform: uppercase;
 	margin-top: 32px;
 	background-color: transparent;
-	border: 2px solid black;
+	border: 2px solid var(--black);
 }
 
 button:hover {
-	background-color: black;
+	background-color: var(--black);
 	color: white;
 }
 
@@ -161,7 +76,7 @@ p {
 }
 
 .works .workSelect {
-	height: 440px;
+	height: 480px;
 	justify-items: center;
 	align-content: center;
 	color: white;
@@ -197,7 +112,7 @@ p {
 	grid-column: 1/2;
 	padding: 0 32px;
 	width: 100%;
-	background: linear-gradient(rgba(20, 20, 20, 0.65), rgba(20, 20, 20, 0.65)), url("./img/Boxer.jpg") no-repeat;
+	background: linear-gradient(rgba(20, 20, 20, 0.65), rgba(20, 20, 20, 0.65)), url("../img/Boxer.jpg") no-repeat;
 	background-position: center;
 	display: flex;
 	flex-direction: column;
@@ -209,7 +124,7 @@ p {
 	padding: 0 32px;
 	width: 100%;
 	background: linear-gradient(rgba(20, 20, 20, 0.65), rgba(20, 20, 20, 0.5)),
-		url("./img/photo-1555507036-ab1f4038808a.jpg") no-repeat;
+		url("../img/photo-1555507036-ab1f4038808a.jpg") no-repeat;
 	background-position: center;
 	display: flex;
 	flex-direction: column;
@@ -220,7 +135,7 @@ p {
 	grid-column: 3/4;
 	padding: 0 32px;
 	width: 100%;
-	background: linear-gradient(rgba(20, 20, 20, 0.65), rgba(20, 20, 20, 0.65)), url("./img/akg-n60-nc-2.jpg") no-repeat;
+	background: linear-gradient(rgba(20, 20, 20, 0.65), rgba(20, 20, 20, 0.65)), url("../img/akg-n60-nc-2.jpg") no-repeat;
 	background-position: center;
 	display: flex;
 	flex-direction: column;
@@ -232,7 +147,7 @@ p {
 	padding: 0 32px;
 	width: 100%;
 	background: linear-gradient(rgba(20, 20, 20, 0.65), rgba(20, 20, 20, 0.65)),
-		url("./img/ruleoflaw-700x0-c-default.jpg") no-repeat;
+		url("../img/ruleoflaw-700x0-c-default.jpg") no-repeat;
 	background-position: center;
 	display: flex;
 	flex-direction: column;
